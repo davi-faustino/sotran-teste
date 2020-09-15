@@ -69,6 +69,8 @@ class DriversController {
       await knex.raw(`copy drivers(nome,telefone,email) FROM '${file}' DELIMITER ',' CSV HEADER`)
       ? message = {message: 'Dados importados com sucesso'}
       : message = {message: 'Ocorreu um erro ao importar dados, tente novamente'};
+
+      this.sendMailForDrivers;
     }else {
       const driver = { nome, email, telefone, cpfCnpj, endereco };
       await knex('drivers').insert(driver)
