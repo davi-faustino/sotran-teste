@@ -1,0 +1,102 @@
+#new-drivers {
+  width: 100%;
+  position: absolute;
+}
+
+#new-drivers form {
+
+  margin: 10px auto;
+  padding: 15px 64px;
+  max-width: 730px;
+  background: #FFF;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#new-drivers form h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+#new-drivers form fieldset {
+  margin-top: 64px;
+  min-inline-size: auto;
+  border: 0;
+}
+
+#new-drivers form legend {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#new-drivers form legend h2 {
+  font-size: 24px;
+}
+
+#new-drivers form legend span {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--text-color);
+}
+
+#new-drivers form .field-group {
+  flex: 1;
+  display: flex;
+}
+
+#new-drivers form .field {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+#new-drivers form .field input {
+  flex: 1;
+  background: #F0F0F5;
+  border-radius: 8px;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6C6C80;
+}
+
+#new-drivers form .field input::placeholder {
+  color: #A0A0B2;
+}
+
+#new-drivers form .field label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#new-drivers form .field-group .field + .field,
+#new-drivers form .field-group input + input {
+  margin-left: 24px;
+}
+
+#new-drivers form button {
+  width: 260px;
+  height: 56px;
+  background: var(--primary-color);
+  border-radius: 8px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  align-self: center;
+  margin-top: 40px;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+
+#new-drivers form button:hover {
+  box-shadow: 0 0 20px #06c606;
+  color: #000;
+}

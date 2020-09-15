@@ -1,0 +1,8 @@
+.review-item {
+  border-bottom: 1px solid #f3f3f3;
+  margin-bottom: 5px;
+}
+
+.review-item:last-child {
+  margin-bottom: none;
+}

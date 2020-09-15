@@ -1,0 +1,100 @@
+#page-drivers {
+  width: 100%;
+  position: absolute;
+}
+
+#page-drivers main {
+  height: 567px;
+  margin: 10px auto;
+  padding: 15px 64px;
+  max-width: 730px;
+  max-height: 567px;
+  background: #FFF;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#page-drivers main h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+#page-drivers main button {
+  padding: 10px;
+  background: var(--primary-color);
+  border-radius: 8px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  align-self: center;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+
+#page-drivers main button:focus {
+  outline: none;
+}
+
+#page-drivers main .filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+}
+
+#page-drivers main .active,
+#page-drivers main button:hover {
+  box-shadow: 0 0 20px #06c606;
+  color: #000;
+}
+
+.paginator {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  border-radius: 4px;
+}
+
+.pagination > li {
+  display: inline;
+}
+
+.pagination > li > a, .pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: #337ab7;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+  cursor: default;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 10px 0;
+}
